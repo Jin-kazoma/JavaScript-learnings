@@ -1,0 +1,124 @@
+// let age = 20;
+// let name = "ken";
+// console.log(age); // print the stored value
+// console.log(name);
+
+// let Info = name + " is" + " " + age + " yrs. old";
+// console.log(Info);
+
+// let greetings = "Hello";
+// greetings += ", ken!"
+// console.log(greetings);
+
+// let str1 = "Hello";
+// let str2 = "Ken";
+// let result = str1.concat(' ',str2);
+// console.log(result);
+
+// let botName = "kenny";
+// let botLocation = "US";
+// let favoriteLanguage = "Python";
+
+// console.log("Hello! I'm your coding fun fact guide!");
+
+// console.log("My name is " + botName + " and I live on " + botLocation + ".");
+// console.log("My favorite programming language is "+ favoriteLanguage + ".");
+
+// let codingFact = favoriteLanguage; // instead of favoriteLanguage i make a new varialbe named codingfact.
+// console.log(codingFact);
+
+// codingFact = "I love using "+ favoriteLanguage;
+// console.log(codingFact);
+
+// codingFact = "It's the best "+ favoriteLanguage + " Language";
+// console.log(codingFact);
+
+// console.log("It was fun sharing these facts with you. Goodbye! - " + botName + " from " + botLocation + "."); //use of + but it's a hassle when you need to put 3 or more variable names, that's why use this method.
+
+// the TEMPLATE LITERALS using (`) backticks
+// let name = "kenny";
+// let age = 20;
+// let place = "QC";
+// let greetings = `Hello ${name} you are ${age} years old, from ${place}`; // With this method you can put 2 or more variable names without hasle on +.
+// console.log(greetings);\
+// console.log(`ako
+//     si
+//     kenny`); // the backticks also support new line, unlike using \n each time for new line.
+
+// let sentence = "JavaScript is awesome!, and i love JavaScript";
+// let position = sentence.indexOf("awesome!"); //default syntax.
+// let position = sentence.indexOf("JavaScript",10); // 35 since it search duplicate arguments, but the first word is the starting point while the other duplicate is locating.
+// console.log(position); // 14 is the output since is count even the space.
+
+
+// console.log("Hi there!");
+// const botName = "teacherBot";
+
+// const greeting = `My name is ${botName}.`;
+// console.log(greeting);
+
+// const subject = "JavaScript";
+// const topic = "strings";
+
+// const sentence = `Today, you will learn about ${topic} in ${subject}.`;
+// console.log(sentence);
+
+// const strLengthIntro = `Here is an example of using the length property on the word ${subject}.`;
+// console.log(strLengthIntro);
+
+// console.log(subject.length);
+
+// console.log(`Here is an example of using the length property on the word ${topic}.`);
+// console.log(topic.length);
+
+// console.log(`Here is an example of accessing the first letter in the word ${subject}.`);
+
+// console.log(subject[0]);
+
+// console.log(`Here is an example of accessing the second letter in the word ${subject}.`);
+// console.log(subject[1]);
+
+// console.log(`Here is an example of accessing the last letter in the word ${subject}.`);
+
+// const lastCharacter = subject[subject.length - 1];
+// console.log(lastCharacter);
+
+// const learningIsFunSentence = "Learning is fun.";
+
+// console.log("Here are examples of finding the positions of substrings in the sentence.");
+
+// console.log(learningIsFunSentence.indexOf("Learning"));
+
+// console.log(learningIsFunSentence.indexOf("fun"));
+// console.log(learningIsFunSentence.indexOf("learning"));
+
+// console.log("I hope you enjoyed learning today.");
+
+
+
+// const fccSentence = "freeCodeCamp is a great place to learn web development.";
+// console.log("Here are some examples of the includes() method:");
+
+// const hasFreeCodeCamp = fccSentence.includes("freeCodeCamp");
+// console.log(`fccSentence.includes("freeCodeCamp") returns ${hasFreeCodeCamp} because the word "freeCodeCamp" is in the sentence.`);
+
+// const hasJavaScript = fccSentence.includes("JavaScript");
+// console.log(`fccSentence.includes("JavaScript") returns ${hasJavaScript} because the word "JavaScript" is not in the sentence.`);
+
+// const hasLowercaseFCC = fccSentence.includes("freecodecamp");
+// console.log(`fccSentence.includes("freecodecamp") returns ${hasLowercaseFCC} because includes is case-sensitive.`);
+
+// const message = "Welcome to freeCodeCamp!";
+
+// console.log("Here are some examples of the slice() method:");
+
+// const platform = message.slice(11, 23);
+// console.log(`The word "${platform}" was sliced from the message.`);
+
+// const greetingWord = message.slice(0, 7);
+// console.log(`The first word is "${greetingWord}".`);
+
+// const endPunctuation = message.slice(-1);
+// console.log(`The ending punctuation mark is a "${endPunctuation}"`);
+
+// console.log("Workshop complete! You now know how to use includes() and slice().");
