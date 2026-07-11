@@ -178,3 +178,71 @@
 
 // const newSentence = `I ${repeatedLove} learning.`;
 // console.log(newSentence);
+
+
+
+//BOOLEAN
+// const firstResult = 5 + 10;
+// console.log(`5 + 10 = ${firstResult}`);
+
+// const secondResult = "8" - 5;
+// console.log(`8 - 5 = ${secondResult}`);
+
+// const thirdResult = 1 + 5;
+// console.log(`1 + 5 = ${thirdResult}`);
+
+// const fourthResult = 0 + 8;
+// console.log(`0 + 8 = ${fourthResult}`);
+
+// const fifthResult = 10 * 2;
+// console.log(`10 * 2 = ${fifthResult}`);
+
+// const sixthResult = 0 + 22;
+// console.log(`0 + 22 = ${sixthResult}`);
+
+
+// const hasDeveloperJob = true;
+
+// if (hasDeveloperJob) {
+//   console.log("Timmy is employed as a developer.");
+// }
+
+// const isTimmyAGamer = false;
+
+// if (isTimmyAGamer) {
+//   console.log("Timmy loves to play World of Warcraft.");
+// }
+
+// const timmyAge = 15;
+
+// if (timmyAge >= 16) {
+//   console.log("Timmy is old enough to drive.");
+// } else {
+//   console.log("Timmy is not old enough to drive.");
+// }
+
+
+//UNARY OPERATORS
+// const str = '42';
+// const strToNum = +str;
+
+// console.log(strToNum); // 42
+// console.log(typeof str); // string
+// console.log(typeof strToNum); // number
+
+// const str = '42';
+// const strToNegativeNum = -str;
+
+// console.log(strToNegativeNum); // -42
+// console.log(typeof str); // string
+// console.log(typeof strToNegativeNum); // number
+
+// let isOnline = true;
+// console.log(!isOnline); // false
+// let isOffline = false;
+// console.log(!isOffline); // true
+
+//TERNARY OPERATORS
+// const temperature = 30;
+// const weather = temperature > 25 ? 'sunny' : 'cool';
+// console.log(`It's a ${weather} day!`);
