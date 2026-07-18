@@ -384,3 +384,80 @@
 
 // console.log(calculateSquareRoot(25));
 // console.log(calculateSquareRoot(100));
+
+
+
+//LAB ACTIVITIES!!!
+// function booWho(value){
+//   return typeof value === "boolean";
+// }
+// console.log(booWho(false));
+// console.log(booWho([1,2,3]));
+// console.log(booWho([].slice));
+// console.log(booWho({"a":1}));
+// console.log(booWho(1));
+// console.log(booWho(NaN));
+// console.log(booWho("a"));
+// console.log(booWho("true"));
+// console.log(booWho("false"));
+
+
+// function maskEmail(email) {
+//   // Find the position of the @ symbol
+//   let atIndex = email.indexOf("@");
+
+//   // Get the username (everything before @)
+//   let username = email.slice(0, atIndex);
+
+//   // Get the domain (everything from @ to the end)
+//   let domain = email.slice(atIndex);
+
+//   // Get the first letter of the username
+//   let firstLetter = username[0];
+
+//   // Get the last letter of the username
+//   let lastLetter = username[username.length - 1];
+
+//   // Create the correct number of * characters
+//   let stars = "*".repeat(username.length - 2);
+
+//   // Return the masked email
+//   return firstLetter + stars + lastLetter + domain;
+// }
+// let email = "apple.pie@example.com"; // variable
+
+// console.log(maskEmail(email)); // pass the variable as the argument
+
+
+// const minIncomeForDuplex = 60000;
+// const minCreditScoreForDuplex = 700;
+
+// const minIncomeForCondo = 45000;
+// const minCreditScoreForCondo = 680;
+
+// const minIncomeForCar = 30000;
+// const minCreditScoreForCar = 650;
+
+// function getLoanMessage(annualIncome, creditScore) {
+//   if(creditScore >= minCreditScoreForDuplex && annualIncome >= minIncomeForDuplex) {
+//     return "You qualify for a duplex, condo, and car loan."
+//   } else if (annualIncome >= minIncomeForCondo && creditScore >= minCreditScoreForCondo) {
+//     return "You qualify for a condo and car loan."
+//   } else if (annualIncome >= minIncomeForCar && creditScore >= minCreditScoreForCar) {
+//     return "You qualify for a car loan."
+//   } else {
+//     return "You don't qualify for any loans."
+//   }
+// }
+
+// const duplexLoanMsg = getLoanMessage(85000,850);
+// console.log(duplexLoanMsg);
+
+// const condoLoanMsg = getLoanMessage(65000,690);
+// console.log(condoLoanMsg);
+
+// const carLoanMsg = getLoanMessage(45000,660);
+// console.log(carLoanMsg);
+
+// const noLoanMsg = getLoanMessage(25000,550);
+// console.log(noLoanMsg);
