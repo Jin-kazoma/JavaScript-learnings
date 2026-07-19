@@ -461,3 +461,67 @@
 
 // const noLoanMsg = getLoanMessage(25000,550);
 // console.log(noLoanMsg);
+
+
+
+// function convertCtoF(celsius){
+//   let fahrenheit;
+//     return fahrenheit = celsius * (9/5) + 32;
+// }
+
+// convertCtoF(-30);
+// convertCtoF(-10);
+// convertCtoF(0);
+// convertCtoF(20);
+// convertCtoF(30);
+
+
+// let count = 0;
+// function cardCounter(card){
+//   switch(card){
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//     case 6:
+//      count++;
+//      break;
+
+//      case 7:
+//      case 8:
+//      case 9:
+//      break;
+
+//      case 10:
+//      case "J":
+//      case "Q":
+//      case "K":
+//      case "A":
+//       count--;
+//       break;
+//   }
+//   if(count > 0){
+//     return count + " Bet";
+//   } else{
+//     return count + " Hold";
+//   }
+// }
+
+
+// function isLeapYear(year) {
+//   if (year % 400 === 0) {
+//     return `${year} is a leap year.`;
+//   } else if (year % 100 === 0) {
+//     return `${year} is not a leap year.`;
+//   } else if (year % 4 === 0) {
+//     return `${year} is a leap year.`;
+//   } else {
+//     return `${year} is not a leap year.`;
+//   }
+// }
+
+// let year = 2024;
+
+// let result = isLeapYear(year);
+
+// console.log(result);
