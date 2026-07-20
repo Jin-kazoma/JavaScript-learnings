@@ -525,3 +525,35 @@
 // let result = isLeapYear(year);
 
 // console.log(result);
+
+
+
+// function truncateString(string,number){
+//   if(string.length > number){
+//     return string.slice(0,number) + "...";
+//   } else {
+//     return string;
+//   }
+// }
+
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+// console.log(truncateString("Peter Piper picked a peck of pickled peppers", 11));
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length));
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2));
+// console.log(truncateString("A-", 1));
+// console.log(truncateString("Absolutely Longer", 2));
+
+
+
+// function confirmEnding(str,target){
+//   return str.slice(-target.length) === target;  // -target lets you count at the end as a start.
+// }
+
+// console.log(confirmEnding("Bastian","n"));
+// confirmEnding("Congratulation", "on");
+// confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification");
+// confirmEnding("He has to give me a new name", "name");
+// confirmEnding("Open sesame", "sage");
+// confirmEnding("Open sesame", "game");
+// confirmEnding("If you want to save our world, you must hurry. We don't know how much longer we can withstand the nothing", "mountain");
+// confirmEnding("Abstraction", "action");
