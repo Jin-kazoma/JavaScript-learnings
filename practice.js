@@ -557,3 +557,69 @@
 // confirmEnding("Open sesame", "game");
 // confirmEnding("If you want to save our world, you must hurry. We don't know how much longer we can withstand the nothing", "mountain");
 // confirmEnding("Abstraction", "action");
+
+
+
+
+// ARRAY LESSONS!
+
+// const fruits = ["apple","melon","mango"]; // array syntax
+// console.log(fruits);
+
+// let addFruits = fruits.push("mango"); // syntax for adding one or more elements
+// console.log(fruits);
+
+// let removeFruits = fruits.pop(); //syntax for removing the last elements
+// console.log(fruits);
+// console.log(removeFruits); // returns the removed elements
+
+// let startFruits = fruits.unshift("pineapple"); // syntax for adding one or more elements to the beginning of an array
+// console.log(fruits);
+
+// let endFruits = fruits.shift(); // syntax for removing the first elements from an array
+// console.log(fruits);
+
+// TWO TYPES OF ARRAY
+// const fruits = ["apple","pineapple","melon"]; // One-dimensional array - single row
+// console.log(fruits); 
+
+//TWO-DIMENSIONAL ARRAY - consists of multiple rows and column
+// const chess =[
+//     [1,2,3,4,5],
+//     [1,2,3,4,5],
+//     [1,2,3,4,5],
+//     [1,2,3,4,5]
+// ];
+// console.log(chess[0][2]);
+
+//DESTRUCTURING - allows you to extract values from arrays
+// const fruits = ['apple','mango','melon','pineapple'];
+
+//first method
+// let [first,second,third,fourth] = fruits; // Assign each values of arrays into variables.
+// console.log(first);
+// console.log(second);
+// console.log(third);
+// console.log(fourth);
+
+//second method
+// const first = fruits[0]; // Another method to assign array parameters into orders you want.
+// const second = fruits[1];
+// const third = fruits[2];
+// const fourth = fruits[3];
+// console.log(first);
+// console.log(second);
+// console.log(third);
+// console.log(fourth);
+
+//DESTRUCTURING also allow you to skip elements using comma.
+// let [first, ,third,] = fruits; // here we skip the mango and pineapple using comma.
+// console.log(first);
+// console.log(third);
+
+
+//REST SYNTAX(...rest) - allows you to capture all remaining elements as new array.
+// let [first,second, ...rest] = fruits;
+// console.log(first);
+// console.log(second);
+// console.log(rest);
