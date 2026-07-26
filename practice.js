@@ -760,3 +760,127 @@ const arr1 = [1, 2, 3];
 const arr2 = arr1.slice();
 arr2.push(4);
 console.log(arr1, arr2); //[1,2,3][1,2,3,4]
+
+
+
+//OBJECT LESSONS
+/*        SYNTAX 
+  const objectName = {
+  propertyName: value,
+  }
+  console.log(objectName.propertyName);
+*/
+const person ={
+  name: "kenny",
+  age: 20,
+  address: "Qc",
+  "place of birth": "samar"
+}
+console.log(person.name);
+console.log(person["place of birth"]); // BRACKET NOTATION is flexible in propertyName with space or start with number
+
+//HOW TO REMOVE PROPERTIES
+delete person.address; // used to remove properties in object
+console.log(person.address); // undefined
+
+// HOW TO CHECK IF AN OBJECT HAS A PROPERTIES
+// hasOwnProperty() METHOD
+console.log(person.hasOwnProperty("name")); // true
+console.log(person.hasOwnProperty("job")); // false
+
+// hasOwn() METHOD
+console.log(Object.hasOwn(person, "name")); // true
+console.log(Object.hasOwn(person, "job")); // false
+
+// in METHOD
+console.log("name" in person);  // true
+
+// undefined METHOD
+console.log(person.name !== undefined); // true
+console.log(person.race !== undefined); // false
+
+// HOW TO ACCESS PROPERTIES FORM THE NESTED OBJECTS AND ARRAY
+// OBJECT NESTED
+const person = {
+  name: "Alice",
+  age: 30,
+  contact:
+  {
+    email: "alice@example.com",
+    phone:
+    {
+      home: "123-456-7890",
+      work: "098-765-4321"
+    }
+  }
+};
+console.log(person.contact.phone.work); // "098-765-4321"
+//BRACKET NOTATION
+console.log(person['contact']['phone']['work']); // "098-765-4321"
+
+// OBJECT WITH ARRAY PROPERTIES
+const person = {
+  name: "Alice",
+  age: 30,
+  addresses: 
+  [
+    { type: "home", street: "123 Main St", city: "Anytown" },
+    { type: "work", street: "456 Market St", city: "Workville" }
+  ]
+};
+console.log(person.addresses[1].city); // "Workville"
+
+
+
+// LAB ACTIVITIES ABOUT OBJECT AND FUNCTION
+const tiger = {
+  species: "Tiger",
+  age: 5,
+  isEndangered: true
+};
+
+const elephant = {
+  species: "Elephant",
+  age: 10,
+  isEndangered: true
+};
+
+const getSpecies = (animal) => {
+  return animal.species;
+};
+console.log(getSpecies(tiger));
+
+const getAge = (animal) => {
+  return animal.age;
+};
+console.log(getAge(tiger));
+
+const addHabitat = (animal, habitat) => {
+  animal.habitat = habitat;
+  return animal;
+};
+console.log(addHabitat(tiger, "Rainforest"));
+
+const updateAge = (animal, newAge) => {
+  animal.age = newAge;
+  return animal;
+};
+console.log(updateAge(elephant, 12));
+
+const removeEndangeredStatus = (animal) => {
+  delete animal.isEndangered;
+  return animal;
+};
+console.log(removeEndangeredStatus(tiger));
+
+const hasHabitat = (animal) => {
+  return animal.hasOwnProperty("habitat");
+};
+console.log(hasHabitat(tiger));
+console.log(hasHabitat(elephant));
+
+const getProperty = (animal,propertyName) => {
+  return animal[propertyName];
+};
+console.log(getProperty(tiger,"species"));
+console.log(getProperty(elephant,"age"));
