@@ -626,261 +626,345 @@
 
 
 
-function golfScore(par,strokes){
-  if(strokes === 1){
-    return "Hole-in-one!";
-  } else if(strokes <= par - 2){
-    return "Eagle";
-  } else if(strokes === par - 1){
-    return "Birdie";
-  } else if(strokes === par + 1){
-    return "Bogey";
-  } else if(strokes === par + 2){
-    return "Double Bogey";
-  } else if (strokes >= par + 3){
-    return "Go Home!";
-  } else if(strokes === par) {
-    return "Par";
-  }
-}
+// function golfScore(par,strokes){
+//   if(strokes === 1){
+//     return "Hole-in-one!";
+//   } else if(strokes <= par - 2){
+//     return "Eagle";
+//   } else if(strokes === par - 1){
+//     return "Birdie";
+//   } else if(strokes === par + 1){
+//     return "Bogey";
+//   } else if(strokes === par + 2){
+//     return "Double Bogey";
+//   } else if (strokes >= par + 3){
+//     return "Go Home!";
+//   } else if(strokes === par) {
+//     return "Par";
+//   }
+// }
 
- console.log(golfScore(3,7));
-golfScore(3,3);
-
-
-
-//INDEXOF()
-let numbers = [10, 20, 30, 20, 40];
-let index = numbers.indexOf(20);
-console.log(index); // 1  //the string index of 20 is 1 since the index always start at 0 so the 10 is 0
-
-let fruits = ["apple", "banana", "orange", "grape"];
-let index = fruits.indexOf("kiwi");
-console.log(index);// -1 // it's -1 since kiwi is not in the array
-
-let colors = ["red", "green", "blue", "yellow", "green"];
-let index = colors.indexOf("green", 2);
-console.log(index);// 4  //it's 4 since the Argument 2 is the starting point, meaning the red and green is skip since we will start at blue and will find the GREEN element which is 4
+//  console.log(golfScore(3,7));
+// golfScore(3,3);
 
 
 
-// ADD AND REMOVE ELEMENTS FROM THE MIDDLE OF AN ARRAY
+// //INDEXOF()
+// let numbers = [10, 20, 30, 20, 40];
+// let index = numbers.indexOf(20);
+// console.log(index); // 1  //the string index of 20 is 1 since the index always start at 0 so the 10 is 0
 
+// let fruits = ["apple", "banana", "orange", "grape"];
+// let index = fruits.indexOf("kiwi");
+// console.log(index);// -1 // it's -1 since kiwi is not in the array
+
+// let colors = ["red", "green", "blue", "yellow", "green"];
+// let index = colors.indexOf("green", 2);
+// console.log(index);// 4  //it's 4 since the Argument 2 is the starting point, meaning the red and green is skip since we will start at blue and will find the GREEN element which is 4
+
+
+
+// // ADD AND REMOVE ELEMENTS FROM THE MIDDLE OF AN ARRAY
+
+// /*
+// array.splice(startIndex, itemsToRemove, item1, item2) - SYNTAX
+// the startindex specifies where to start in the array, the itemstoremove is about how many you want to remove
+//  */
+
+// // HOW TO REMOVE ELEMENTS IN ARRAY
+// let fruits = ["apple", "banana", "orange", "mango", "kiwi"]; 
+// let removed = fruits.splice(2, 2);
+// console.log(fruits);  // ["apple", "banana", "kiwi"]
+// console.log(removed); // ["orange", "mango"]
+
+// // HOW TO INSERT LEMENTS IN MIDDLE OF ARRAY
+// let colors = ["red", "green", "blue"];
+// colors.splice(1, 0, "yellow", "purple"); //  start at index 1 which is green meaning wee will insert the 2 arguments after red , wile the 0 parameter indicates that theres is no removing
+// console.log(colors); // ["red", "yellow", "purple", "green", "blue"]
+
+
+// let numbers = [1, 2, 3, 4, 5];
+// numbers.splice(1, 2, 6, 7, 8); // start at index 2(2),then the 2 parameter indicates to remove 2 elements whic is (2,3), then after 1 we will insert the agruments(items)
+// console.log(numbers); // [1, 6, 7, 8, 4, 5]
+
+
+// let original = [1, 2, 3, 4, 5];
+// let copy = [...original]; // this creat a copy without modify with the use of spread operator (...).
+// copy.splice(2, 1, 6); // start at index 2 and remove 1 element whic is the starting index(3), then nsert 6
+// console.log(original); // [1, 2, 3, 4, 5]
+// console.log(copy);     // [1, 2, 6, 4, 5]
+
+
+// let fruits = ["apple", "banana", "orange", "mango"];
+// let indexToRemove = fruits.indexOf("orange"); //  indexOf() method to find the index of the element orange in the fruits array.
+// if (indexToRemove !== -1) // it will return -1 if the arguments is not found in array
+// {
+//     fruits.splice(indexToRemove, 1);
+// }
+// console.log(fruits); // ["apple", "banana", "mango"]
+
+
+// let array = [1, 2, 3, 4, 5];
+// array.splice(0); 
+// console.log(array); // [] you can also clear an array by removing all elements
+
+
+
+// // CHECK IF AN ARRAY CONTAINS A CERTAIN VALUE
+// /*
+// the includes() method is a simple and efficient way to check if an array contains a specific value.
+// This method returns a boolean value: true if the array contains the specified element, and false otherwise.
+//  NOTE THAT THIS METHOD IS CASE SENSETIVE WHEN DEALING WITH STRINGS
+// */
+
+// let fruits = ["apple", "banana", "orange", "mango"];
+// console.log(fruits.includes("banana")); // true
+// console.log(fruits.includes("grape"));  // false
+// console.log(fruits.includes("Banana")); // false - case sensetive
+
+// // the second parameter specifies the position in array to start the search
+// let numbers = [10, 20, 30, 40, 50, 30, 60];
+// console.log(numbers.includes(30, 3)); // true 
+// console.log(numbers.includes(30, 4)); // true
+
+
+// // SHALLOW COPY OF AN ARRAY
+// const originalArray = [1, 2, 3];
+// const copyArray = [].concat(originalArray); 
+// /*
+// , we are using the concat() method to concatenate an empty array to the originalArray. 
+// This will create a new array that is a shallow copy of originalArray.
+//  */
+// console.log(copyArray); // [1, 2, 3]
+// console.log(copyArray === originalArray); // false
+// /*
+// The copyArray contains the same elements as originalArray, 
+// but it is a different array object, which is why the strict equality check (===) returns false.
+// */
+
+
+// const originalArray = [1, 2, 3];
+// const copyArray = [...originalArray]; //The spread operator (...), introduced in ES6, provides another concise way to create shallow copies of arrays.
+// console.log(copyArray); // [1, 2, 3]
+// console.log(copyArray === originalArray); // false
+
+
+// const originalArray = [1, 2, 3];
+// const copyArray = [...originalArray];
+// copyArray.push(4); // insert on the copy array 
+// console.log(originalArray); // [1, 2, 3]
+// console.log(copyArray);     // [1, 2, 3, 4]
+
+
+// const arr1 = [1, 2, 3];
+// const arr2 = arr1.slice();
+// arr2.push(4);
+// console.log(arr1, arr2); //[1,2,3][1,2,3,4]
+
+
+
+// //OBJECT LESSONS
+// /*        SYNTAX 
+//   const objectName = {
+//   propertyName: value,
+//   }
+//   console.log(objectName.propertyName);
+// */
+// const person ={
+//   name: "kenny",
+//   age: 20,
+//   address: "Qc",
+//   "place of birth": "samar"
+// }
+// console.log(person.name);
+// console.log(person["place of birth"]); // BRACKET NOTATION is flexible in propertyName with space or start with number
+
+// //HOW TO REMOVE PROPERTIES
+// delete person.address; // used to remove properties in object
+// console.log(person.address); // undefined
+
+// // HOW TO CHECK IF AN OBJECT HAS A PROPERTIES
+// // hasOwnProperty() METHOD
+// console.log(person.hasOwnProperty("name")); // true
+// console.log(person.hasOwnProperty("job")); // false
+
+// // hasOwn() METHOD
+// console.log(Object.hasOwn(person, "name")); // true
+// console.log(Object.hasOwn(person, "job")); // false
+
+// // in METHOD
+// console.log("name" in person);  // true
+
+// // undefined METHOD
+// console.log(person.name !== undefined); // true
+// console.log(person.race !== undefined); // false
+
+// // HOW TO ACCESS PROPERTIES FORM THE NESTED OBJECTS AND ARRAY
+// // OBJECT NESTED
+// const person = {
+//   name: "Alice",
+//   age: 30,
+//   contact:
+//   {
+//     email: "alice@example.com",
+//     phone:
+//     {
+//       home: "123-456-7890",
+//       work: "098-765-4321"
+//     }
+//   }
+// };
+// console.log(person.contact.phone.work); // "098-765-4321"
+// //BRACKET NOTATION
+// console.log(person['contact']['phone']['work']); // "098-765-4321"
+
+// // OBJECT WITH ARRAY PROPERTIES
+// const person = {
+//   name: "Alice",
+//   age: 30,
+//   addresses: 
+//   [
+//     { type: "home", street: "123 Main St", city: "Anytown" },
+//     { type: "work", street: "456 Market St", city: "Workville" }
+//   ]
+// };
+// console.log(person.addresses[1].city); // "Workville"
+
+
+
+// // LAB ACTIVITIES ABOUT OBJECT AND FUNCTION
+// const tiger = {
+//   species: "Tiger",
+//   age: 5,
+//   isEndangered: true
+// };
+
+// const elephant = {
+//   species: "Elephant",
+//   age: 10,
+//   isEndangered: true
+// };
+
+// const getSpecies = (animal) => {
+//   return animal.species;
+// };
+// console.log(getSpecies(tiger));
+
+// const getAge = (animal) => {
+//   return animal.age;
+// };
+// console.log(getAge(tiger));
+
+// const addHabitat = (animal, habitat) => {
+//   animal.habitat = habitat;
+//   return animal;
+// };
+// console.log(addHabitat(tiger, "Rainforest"));
+
+// const updateAge = (animal, newAge) => {
+//   animal.age = newAge;
+//   return animal;
+// };
+// console.log(updateAge(elephant, 12));
+
+// const removeEndangeredStatus = (animal) => {
+//   delete animal.isEndangered;
+//   return animal;
+// };
+// console.log(removeEndangeredStatus(tiger));
+
+// const hasHabitat = (animal) => {
+//   return animal.hasOwnProperty("habitat");
+// };
+// console.log(hasHabitat(tiger));
+// console.log(hasHabitat(elephant));
+
+// const getProperty = (animal,propertyName) => {
+//   return animal[propertyName];
+// };
+// console.log(getProperty(tiger,"species"));
+// console.log(getProperty(elephant,"age"));
+
+
+
+
+// JSON
 /*
-array.splice(startIndex, itemsToRemove, item1, item2) - SYNTAX
-the startindex specifies where to start in the array, the itemstoremove is about how many you want to remove
- */
-
-// HOW TO REMOVE ELEMENTS IN ARRAY
-let fruits = ["apple", "banana", "orange", "mango", "kiwi"]; 
-let removed = fruits.splice(2, 2);
-console.log(fruits);  // ["apple", "banana", "kiwi"]
-console.log(removed); // ["orange", "mango"]
-
-// HOW TO INSERT LEMENTS IN MIDDLE OF ARRAY
-let colors = ["red", "green", "blue"];
-colors.splice(1, 0, "yellow", "purple"); //  start at index 1 which is green meaning wee will insert the 2 arguments after red , wile the 0 parameter indicates that theres is no removing
-console.log(colors); // ["red", "yellow", "purple", "green", "blue"]
-
-
-let numbers = [1, 2, 3, 4, 5];
-numbers.splice(1, 2, 6, 7, 8); // start at index 2(2),then the 2 parameter indicates to remove 2 elements whic is (2,3), then after 1 we will insert the agruments(items)
-console.log(numbers); // [1, 6, 7, 8, 4, 5]
-
-
-let original = [1, 2, 3, 4, 5];
-let copy = [...original]; // this creat a copy without modify with the use of spread operator (...).
-copy.splice(2, 1, 6); // start at index 2 and remove 1 element whic is the starting index(3), then nsert 6
-console.log(original); // [1, 2, 3, 4, 5]
-console.log(copy);     // [1, 2, 6, 4, 5]
-
-
-let fruits = ["apple", "banana", "orange", "mango"];
-let indexToRemove = fruits.indexOf("orange"); //  indexOf() method to find the index of the element orange in the fruits array.
-if (indexToRemove !== -1) // it will return -1 if the arguments is not found in array
-{
-    fruits.splice(indexToRemove, 1);
-}
-console.log(fruits); // ["apple", "banana", "mango"]
-
-
-let array = [1, 2, 3, 4, 5];
-array.splice(0); 
-console.log(array); // [] you can also clear an array by removing all elements
-
-
-
-// CHECK IF AN ARRAY CONTAINS A CERTAIN VALUE
-/*
-the includes() method is a simple and efficient way to check if an array contains a specific value.
-This method returns a boolean value: true if the array contains the specified element, and false otherwise.
- NOTE THAT THIS METHOD IS CASE SENSETIVE WHEN DEALING WITH STRINGS
+JSON.stringify() is used to convert a JavaScript object into a JSON string. 
+This is useful when you want to store or transmit data in a format that can be easily shared or transferred between systems.
 */
+// JSON.stringify()
+// const user = {
+//   name: "John",
+//   age: 30,
+//   isAdmin: true
+// };
+// const jsonString = JSON.stringify(user);
+// console.log(jsonString);
 
-let fruits = ["apple", "banana", "orange", "mango"];
-console.log(fruits.includes("banana")); // true
-console.log(fruits.includes("grape"));  // false
-console.log(fruits.includes("Banana")); // false - case sensetive
+//The JSON.stringify() method also accepts an optional parameter called a replacer, which can be a function or an array.
+//Here is an example of using an array for the optional replacer parameter:
+// const developerObj = {
+//   firstName: "Jessica",
+//   isAwesome: true,
+//   isMusician: true,
+//   country: "USA",
+// };
+// result: {"firstName":"Jessica","country":"USA"}
+// console.log(JSON.stringify(developerObj, ["firstName", "country"]));
 
-// the second parameter specifies the position in array to start the search
-let numbers = [10, 20, 30, 40, 50, 30, 60];
-console.log(numbers.includes(30, 3)); // true 
-console.log(numbers.includes(30, 4)); // true
-
-
-// SHALLOW COPY OF AN ARRAY
-const originalArray = [1, 2, 3];
-const copyArray = [].concat(originalArray); 
-/*
-, we are using the concat() method to concatenate an empty array to the originalArray. 
-This will create a new array that is a shallow copy of originalArray.
- */
-console.log(copyArray); // [1, 2, 3]
-console.log(copyArray === originalArray); // false
-/*
-The copyArray contains the same elements as originalArray, 
-but it is a different array object, which is why the strict equality check (===) returns false.
-*/
-
-
-const originalArray = [1, 2, 3];
-const copyArray = [...originalArray]; //The spread operator (...), introduced in ES6, provides another concise way to create shallow copies of arrays.
-console.log(copyArray); // [1, 2, 3]
-console.log(copyArray === originalArray); // false
+//Another method you will be using a lot in your programming is the JSON.parse() method. 
+//JSON.parse() converts a JSON string back into a JavaScript object. 
+// This is useful when you retrieve JSON data from a web server or from localStorage and you need to manipulate the data in your application. 
+// You will learn more about localStorage in a future lesson.
+// const jsonString = '{"name":"John","age":30,"isAdmin":true}';
+// const userObject = JSON.parse(jsonString);
+// console.log(userObject);
+// Result:
+// { name: 'John', age: 30, isAdmin: true }
 
 
-const originalArray = [1, 2, 3];
-const copyArray = [...originalArray];
-copyArray.push(4); // insert on the copy array 
-console.log(originalArray); // [1, 2, 3]
-console.log(copyArray);     // [1, 2, 3, 4]
+// OPTIONAL CHAINING OPERATIONS(?.)
+// const person = {
+//   name: "Alice",
+//   age: 30
+// };
+// console.log(person.name); // "Alice"
+// console.log(person.job); // undefined since the job does not exits
 
-
-const arr1 = [1, 2, 3];
-const arr2 = arr1.slice();
-arr2.push(4);
-console.log(arr1, arr2); //[1,2,3][1,2,3,4]
-
-
-
-//OBJECT LESSONS
-/*        SYNTAX 
-  const objectName = {
-  propertyName: value,
-  }
-  console.log(objectName.propertyName);
-*/
-const person ={
-  name: "kenny",
-  age: 20,
-  address: "Qc",
-  "place of birth": "samar"
-}
-console.log(person.name);
-console.log(person["place of birth"]); // BRACKET NOTATION is flexible in propertyName with space or start with number
-
-//HOW TO REMOVE PROPERTIES
-delete person.address; // used to remove properties in object
-console.log(person.address); // undefined
-
-// HOW TO CHECK IF AN OBJECT HAS A PROPERTIES
-// hasOwnProperty() METHOD
-console.log(person.hasOwnProperty("name")); // true
-console.log(person.hasOwnProperty("job")); // false
-
-// hasOwn() METHOD
-console.log(Object.hasOwn(person, "name")); // true
-console.log(Object.hasOwn(person, "job")); // false
-
-// in METHOD
-console.log("name" in person);  // true
-
-// undefined METHOD
-console.log(person.name !== undefined); // true
-console.log(person.race !== undefined); // false
-
-// HOW TO ACCESS PROPERTIES FORM THE NESTED OBJECTS AND ARRAY
-// OBJECT NESTED
-const person = {
-  name: "Alice",
-  age: 30,
-  contact:
-  {
-    email: "alice@example.com",
-    phone:
-    {
-      home: "123-456-7890",
-      work: "098-765-4321"
-    }
-  }
-};
-console.log(person.contact.phone.work); // "098-765-4321"
-//BRACKET NOTATION
-console.log(person['contact']['phone']['work']); // "098-765-4321"
-
-// OBJECT WITH ARRAY PROPERTIES
-const person = {
-  name: "Alice",
-  age: 30,
-  addresses: 
-  [
-    { type: "home", street: "123 Main St", city: "Anytown" },
-    { type: "work", street: "456 Market St", city: "Workville" }
-  ]
-};
-console.log(person.addresses[1].city); // "Workville"
+// // with the optional chaining operations
+// const user = {
+//   name: "John",
+//   profile: {
+//     email: "john@example.com",
+//     address: {
+//       street: "123 Main St",
+//       city: "Somewhere"
+//     }
+//   }
+// };
+// console.log(user?.profile?.address?.street); // "123 Main St"
+// console.log(user?.profile?.phone?.number);   // undefined
 
 
 
-// LAB ACTIVITIES ABOUT OBJECT AND FUNCTION
-const tiger = {
-  species: "Tiger",
-  age: 5,
-  isEndangered: true
-};
+// OBJECT DESTRUCTURING
 
-const elephant = {
-  species: "Elephant",
-  age: 10,
-  isEndangered: true
-};
+// const person = { name: "Alice", age: 30, city: "New York" };
+// const { name, age } = person;
 
-const getSpecies = (animal) => {
-  return animal.species;
-};
-console.log(getSpecies(tiger));
+// console.log(name); // Alice
+// console.log(age);  // 30
 
-const getAge = (animal) => {
-  return animal.age;
-};
-console.log(getAge(tiger));
+// YOU CAN ASSIGN THE VALUES TO A DIFFERENT NAMES
+// let person = { name: "Alice", age: 30, city: "New York" };
+// let { name: personName, age: personAge } = person;
 
-const addHabitat = (animal, habitat) => {
-  animal.habitat = habitat;
-  return animal;
-};
-console.log(addHabitat(tiger, "Rainforest"));
+// console.log(personName); // Alice
+// console.log(personAge); //  30
 
-const updateAge = (animal, newAge) => {
-  animal.age = newAge;
-  return animal;
-};
-console.log(updateAge(elephant, 12));
+// allow you to set different values, if the value does not exits in object
+// let person = { name: "Alice", age: 30, city: "New York" };
+// let { name, age, country = "Unknown" } = person;
 
-const removeEndangeredStatus = (animal) => {
-  delete animal.isEndangered;
-  return animal;
-};
-console.log(removeEndangeredStatus(tiger));
-
-const hasHabitat = (animal) => {
-  return animal.hasOwnProperty("habitat");
-};
-console.log(hasHabitat(tiger));
-console.log(hasHabitat(elephant));
-
-const getProperty = (animal,propertyName) => {
-  return animal[propertyName];
-};
-console.log(getProperty(tiger,"species"));
-console.log(getProperty(elephant,"age"));
+// console.log(country); // Unknown
