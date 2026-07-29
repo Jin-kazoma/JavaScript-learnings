@@ -1031,3 +1031,80 @@ This is useful when you want to store or transmit data in a format that can be e
 // recipe3.difficultyLevel = getDifficultyLevel(recipe3.cookingTime);
 
 // console.log(recipes);
+
+
+const questions = [
+//   { // objects
+//     category:"JavaScript",
+//     question:"how to log the output?",
+//     choices:["console","log","console.log"],
+//     answer:"console.log"
+//   },
+
+//   {
+//     category:"HTML",
+//     question:"The title font?",
+//     choices:["h1","h4","h2"],
+//     answer:"h1"
+//   },
+
+//   {
+//     category:"CSS",
+//     question:"How to change the color of font?",
+//     choices:["color","margin","font-size"],
+//     answer:"color"
+//   },
+
+//   {
+//     category:"HTML",
+//     question:"The paragraph element?",
+//     choices:["p","hl","article"],
+//     answer:"p"
+//   },
+
+//   {
+//     category:"JavaScript",
+//     question:"Keyword that lets you reassign value?",
+//     choices:["let","cont","function"],
+//     answer:"let"
+//   }
+// ];
+
+// function getRandomQuestion(questions){
+//   const randomIndex = Math.floor(Math.random() * questions.length)
+//   return questions[randomIndex];
+// }
+
+// // random coices of computer
+// // function getRandomComputerChoice(choices){
+// //   const randomChoices = Math.floor(Math.random() * choices.length)
+// //   return choices[randomChoices];
+// // }
+
+// function getResults(question,computerChoice){
+//   if(computerChoice === question.answer){
+//     return "The computer's choice is correct!";
+//   } else{
+//     return `The computer's choice is wrong. The correct answer is: ${question.answer}`;
+//   }
+// }
+// // const randomQuestion = getRandomQuestion(questions);
+// // console.log(randomQuestion.question);
+// // console.log(randomQuestion.choices);
+// // const computerChoice = getRandomComputerChoice(randomQuestion.choices);
+// // console.log(computerChoice);
+// // console.log(getResults(randomQuestion, computerChoice));
+
+// // let user input answers
+// function getRandomQuestion(questions) {
+//   const randomIndex = Math.floor(Math.random() * questions.length);
+//   return questions[randomIndex];
+// }
+
+// function getResults(question, userChoice) {
+//   if (userChoice === question.answer) {
+//     return "The user's choice is correct!";
+//   } else {
+//     return `The user's choice is wrong. The correct answer is: ${question.answer}`;
+//   }
+// }
