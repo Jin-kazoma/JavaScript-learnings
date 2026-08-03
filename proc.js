@@ -165,3 +165,49 @@
 //     }
 // };
 // checkStatus(account);
+
+
+
+
+//USER LOGIN SYSTEM - PROJECT 2
+const user = {
+    username: "kenny",
+    password: "kenn111",
+    email: "ken@gmail.com",
+    isLoggedIn: false,
+    loginAttempts: 0,
+    isLocked: true
+};
+
+function displayUser(userInfo){
+    console.log(userInfo);
+};
+displayUser(user);
+
+function login(username,password){
+    if(username === user.username && password === user.password ){
+        console.log("Login successful");
+        user.loginAttempts = 0;
+        return;
+    } else{
+        console.log("Invalid username or password!");
+    }
+
+    user.loginAttempts++;
+
+    if(user.loginAttempts >= 3){
+        console.log("try again");
+    } else {
+        console.log(`Attempts: ${user.loginAttempts}/3`);
+    }
+};
+login("ken","ken111");
+login("ket","ket11");
+login("kenny","kenn111");
+
+function logout(){
+    user.isLoggedIn = false;
+    console.log("log out successfully!");
+    return;
+};
+logout();
