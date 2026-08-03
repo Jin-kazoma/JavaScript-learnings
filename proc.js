@@ -89,15 +89,79 @@
 
 
 //ATM SIMULATOR 
-const account = {
-    accountName: "kenny",
-    accountId: 111,
-    balance: 100,
-    pin: 'ac001',
-    isLocked: true        
-};
-console.log(account);
+// const account = {
+//     accountName: "kenny",
+//     accountId: 111,
+//     balance: 100,
+//     pin: "ac001",
+//     status: "Active",
+//     isLocked: false     
+// };
 
-function deposit(amount){
-    
-}
+// function displayAccount(accountInfo){
+//     console.log(accountInfo);
+// };
+// displayAccount(account);
+
+
+// function deposit(amount){
+//     if(account.isLocked){
+//         console.log("Account is locked!");
+//         return;
+//     }
+
+//     if(account.balance <= 0){
+//         console.log("Invalid amount!");
+//     }
+
+//     account.balance += amount;
+//     console.log(`Current Balance: ${account.balance}`);
+// };
+// deposit(800);
+
+// function withdraw(withdrawalAmount){
+//     if(account.isLocked){
+//         console.log("Cant withdraw, Account is locked!");
+//         return;
+//     }
+
+//     if(withdrawalAmount <= account.balance){
+//         console.log("\nWithdraw Successfully.\n");
+//     } else{
+//         console.log("\nInsufficient Balance!\n");
+//     }
+
+//     account.balance -= withdrawalAmount;
+
+//     console.log(`Withdraw amount: ${withdrawalAmount}`);
+//     console.log(`Remaining Balance: ${account.balance}`);
+// };
+// withdraw(300);
+
+// // function changePin(newPin){
+// //     account.pin = newPin;
+// //     console.log("\nPIN successfully changed!\n");
+// // };
+// // changePin("ac221");
+// // console.log(account);
+
+// function lockAccount(){
+//     account.isLocked = true;
+//     console.log("\nAccount is locked!\n");
+// };
+// lockAccount();
+
+// function unlockAccount(){
+//    account.isLocked = false;
+//    console.log("Account is unlocked!");
+// };
+// unlockAccount();
+
+// function checkStatus(account){
+//     if(account.isLocked === true){
+//         console.log("\nAccount status is: locked\n");
+//     } else{
+//         console.log("\nAccount status is: unlocked\n");
+//     }
+// };
+// checkStatus(account);
