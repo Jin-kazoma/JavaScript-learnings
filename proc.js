@@ -88,7 +88,7 @@
 
 
 
-//ATM SIMULATOR 
+//ATM SIMULATOR - project 1
 // const account = {
 //     accountName: "kenny",
 //     accountId: 111,
