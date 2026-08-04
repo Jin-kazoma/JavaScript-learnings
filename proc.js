@@ -169,45 +169,74 @@
 
 
 
+
 //USER LOGIN SYSTEM - PROJECT 2
-const user = {
-    username: "kenny",
-    password: "kenn111",
-    email: "ken@gmail.com",
-    isLoggedIn: false,
-    loginAttempts: 0,
-    isLocked: true
-};
+// const user = {
+//     username: "kenny",
+//     password: "kenn111",
+//     email: "ken@gmail.com",
+//     isLoggedIn: false,
+//     loginAttempts: 0,
+//     isLocked: false
+// };
 
-function displayUser(userInfo){
-    console.log(userInfo);
-};
-displayUser(user);
+// function displayUser(userInfo){
+//     console.log(userInfo);
+// };
+// displayUser(user);
 
-function login(username,password){
-    if(username === user.username && password === user.password ){
-        console.log("Login successful");
-        user.loginAttempts = 0;
-        return;
-    } else{
-        console.log("Invalid username or password!");
-    }
+// function login(username,password){
+//     if(user.isLocked){
+//         console.log("\naccount locked, cant sign in!");
+//         return;
+//     }
 
-    user.loginAttempts++;
+//     if(username === user.username && password === user.password ){
+//         console.log("Login successful");
+//         user.isLoggedIn = true;
+//         user.loginAttempts = 0;
+//         return;
+//     } else{
+//         console.log("\nInvalid username or password!");
+//     }
 
-    if(user.loginAttempts >= 3){
-        console.log("try again");
-    } else {
-        console.log(`Attempts: ${user.loginAttempts}/3`);
-    }
-};
-login("ken","ken111");
-login("ket","ket11");
-login("kenny","kenn111");
+//     user.loginAttempts++;
 
-function logout(){
-    user.isLoggedIn = false;
-    console.log("log out successfully!");
-    return;
-};
-logout();
+//     if(user.loginAttempts >= 3){
+//         console.log("account locked");
+//         user.isLocked = true;
+//         return;
+//     } else {
+//         console.log(`Attempts: ${user.loginAttempts}/3`);
+//     }
+// };
+// login("ken","ken111");
+// login("ket","ket11");
+// login("kenny","kenn111");
+// console.log(user);
+// // login("kenny","kenn111");// check the th attempt, should log the condition of if statement in logout.
+
+// function logout(){
+//     if(user.isLoggedIn){
+//         console.log("\nlog out successfully");
+//         user.isLoggedIn = false; // execute after the log, the start is true but with this block of code it became false
+//     } else{
+//         console.log("\nalready log out");
+//         return;
+//     }
+// };
+// logout();
+// console.log(user.isLoggedIn);
+
+// function changePassword(newPassword){
+//     if(user.isLoggedIn){
+//         user.password = newPassword;
+//         console.log("\nPassword change success!");
+//     } else{
+//         console.log("login first!");
+//         return;
+//     }
+
+//     console.log(`\nPassword changed succesfully: ${newPassword}`);
+// };
+// changePassword("kenny01");
