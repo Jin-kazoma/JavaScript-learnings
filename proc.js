@@ -265,16 +265,19 @@
 // const evenNum =[];
 // const oddNum = [];
 
+// let total = 0;
 // for(let i = 0; i < number.length; i++){
 //     if(number[i] % 2 === 0){
 //         evenNum.push(number[i]);
 //     }else{
 //         oddNum.push(number[i]);
 //     }
+//      otal += grade[i];
 // }
 // console.log(number);
 // console.log("Even: ",evenNum);
 // console.log("Odd: ",oddNum);
+// console.log("Sum: ",total);
 
 
 // GRADE CALCULATOR
