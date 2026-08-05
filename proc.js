@@ -240,3 +240,38 @@
 //     console.log(`\nPassword changed succesfully: ${newPassword}`);
 // };
 // changePassword("kenny01");
+
+
+
+// LOOPS practice
+// for(i = 0; i < 10; i++){
+//     console.log(`The number is: ${i}`);
+// };
+
+// let i = 0;
+// while(i < 10){
+//     console.log(`The number is: ${i}`);
+//     i++;
+// };
+
+// let i = 0;
+// do{
+//     console.log(`The number is: ${i}`);
+//     i++;
+// }while(i < 10);
+
+//NUMBER ANALYZER
+// const number = [12,5,20,18,3];
+// const evenNum =[];
+// const oddNum = [];
+
+// for(let i = 0; i < number.length; i++){
+//     if(number[i] % 2 === 0){
+//         evenNum.push(number[i]);
+//     }else{
+//         oddNum.push(number[i]);
+//     }
+// }
+// console.log(number);
+// console.log("Even: ",evenNum);
+// console.log("Odd: ",oddNum);
