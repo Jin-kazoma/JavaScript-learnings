@@ -275,3 +275,48 @@
 // console.log(number);
 // console.log("Even: ",evenNum);
 // console.log("Odd: ",oddNum);
+
+
+// GRADE CALCULATOR
+// const grades = [95, 88, 75, 60, 98];
+
+// let total = 0;
+// let highest = grades[0];
+// let lowest = grades[0];
+
+// for (let i = 0; i < grades.length; i++) {
+//     let grade = grades[i];
+
+//     console.log("\nGrade:", grade);
+
+//     if (grade === 100) {
+//         console.log("Grade: A+");
+//     } else if (grade >= 90) {
+//         console.log("Grade: A");
+//     } else if (grade >= 80) {
+//         console.log("Grade: B");
+//     } else if (grade >= 70) {
+//         console.log("Grade: C");
+//     } else if (grade >= 60) {
+//         console.log("Grade: D");
+//     } else {
+//         console.log("Grade: FAILED");
+//     }
+
+//     total += grade;
+
+//     if (grade > highest) {
+//         highest = grade;
+//     }
+
+//     if (grade < lowest) {
+//         lowest = grade;
+//     }
+// }
+
+// let average = total / grades.length;
+
+// console.log("---------------------");
+// console.log("Average:", average);
+// console.log("Highest Grade:", highest);
+// console.log("Lowest Grade:", lowest);
