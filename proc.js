@@ -323,3 +323,34 @@
 // console.log("Average:", average);
 // console.log("Highest Grade:", highest);
 // console.log("Lowest Grade:", lowest);
+
+
+
+// SHOPPING CART
+// const prices = [120, 50, 300, 80, 150];
+// let total = 0;
+// let highestPrice = prices[0];
+// let lowestPrice = prices[0];
+
+// for (let i = 0; i < prices.length; i++){
+//     let price = prices[i];
+//     console.log("Prices: ", price);
+
+//     total += price;
+
+//     if(price >  highestPrice){
+//         highestPrice = price;
+//     }
+//     if(price < lowestPrice){
+//         lowestPrice = price;
+//     }
+
+// };
+
+// let average = total / prices.length;
+
+// console.log("\nTotal: ",total);
+// console.log("Average: ", average);
+
+// console.log("\nHighest: ", highestPrice);
+// console.log("Lowest: ", lowestPrice);
