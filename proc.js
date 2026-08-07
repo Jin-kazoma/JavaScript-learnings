@@ -430,3 +430,61 @@ const books = [
 
 // console.log("Borrowed Titles: ",borrowedTitles);
 // console.log("Available Titles: ", availableTitles);
+
+
+    
+// const students = [
+//     { name: "Kenny", grade: 88 },
+//     { name: "Mark", grade: 72 },
+//     { name: "John", grade: 95 },
+//     { name: "Sarah", grade: 64 },
+//     { name: "Anna", grade: 91 }
+// ];
+
+// let passed = 0;
+// let passedStudents = [];
+// let failed = 0;
+// let average = 0;
+
+// let highest = students[0].grade;
+// let lowest = students[0].grade;
+// let highestName = students[0].name;
+// let lowestName = students[0].name;
+
+// for(let i = 0; i < students.length; i++){
+
+//     let studentName = students[i].name;
+//     let studentGrade = students[i].grade;
+//     console.log(`${studentName} - ${studentGrade}`);
+
+//     if(studentGrade >= 75){
+//         passed++;
+//         passedStudents.push(studentName);
+//     } else{
+//         failed++;
+//     }
+
+
+//     if(studentGrade > highest){
+//         highest = studentGrade;
+//         highestName = studentName;
+//     }
+//     if(studentGrade < lowest){
+//         lowest = studentGrade;
+//         lowestName = studentName;
+//     }
+
+//     average += studentGrade;
+
+// };
+// let averageTotal = average / students.length;
+
+// console.log("\npassed: ",passed);
+// console.log("failed: ",failed);
+
+// console.log(`\nHighest: ${highestName} (${highest})`);
+// console.log(`Lowest: ${lowestName} (${lowest})`);
+
+// console.log("\nAverage: ", averageTotal);
+
+// console.log(`Passed student: ${passedStudents}`);
