@@ -395,3 +395,38 @@
 // console.log(`Total stocks: ${totalStock}`); // other method
 // console.log("Highest Stock: ",`${highestName} (${highestStock})`); // other method
 // console.log("Lowest Stock: ",lowestName,"(" ,lowestStock,")"); // main method
+
+
+const books = [
+//     { title: "Atomic Habits", borrowed: true },
+//     { title: "Clean Code", borrowed: false },
+//     { title: "JavaScript Guide", borrowed: true },
+//     { title: "Harry Potter", borrowed: false },
+//     { title: "The Hobbit", borrowed: true }
+// ];
+
+// let borrowCount = 0;
+// let availableCount = 0;
+
+// const borrowedTitles = [];
+// const availableTitles = [];
+
+// for (let i = 0; i < books.length; i++) {
+
+//     let book = books[i];
+//     let borrowedBooks = book.borrowed;
+//     let booksTitle = book.title;
+
+//     if (borrowedBooks) {
+//         borrowCount++;
+//         borrowedTitles.push(booksTitle);
+//     } else {
+//         availableCount++;
+//         availableTitles.push(booksTitle);
+//     }
+// }
+// console.log("Borrowed: ",borrowCount);
+// console.log("Available: ", availableCount);
+
+// console.log("Borrowed Titles: ",borrowedTitles);
+// console.log("Available Titles: ", availableTitles);
