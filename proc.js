@@ -354,3 +354,44 @@
 
 // console.log("\nHighest: ", highestPrice);
 // console.log("Lowest: ", lowestPrice);
+
+
+
+//INVENTORY REPORT
+// const inventory = [
+//     { name: "Keyboard", stock: 12 },
+//     { name: "Mouse", stock: 4 },
+//     { name: "Monitor", stock: 7 },
+//     { name: "Laptop", stock: 2 },
+//     { name: "Headset", stock: 15 }
+// ];
+
+// let totalStock = 0;
+// let highestStock = inventory[0].stock;
+// let highestName = inventory[0].name;
+
+// let lowestStock = inventory[0].stock;
+// let lowestName = inventory[0].name;
+
+
+// for(let i = 0; i < inventory.length; i++){
+
+//     let inventoryName = inventory[i].name;
+//     let inventoryStock = inventory[i].stock;
+//     console.log(`${inventoryName} - ${inventoryStock}`);
+    
+//     totalStock += inventoryStock;
+
+//     if(inventoryStock > highestStock){
+//         highestStock = inventoryStock;
+//         highestName = inventoryName;
+//     }
+//     if(inventoryStock < lowestStock){
+//         lowestStock = inventoryStock;
+//         lowestName = inventoryName;
+//     }
+
+// };
+// console.log(`Total stocks: ${totalStock}`); // other method
+// console.log("Highest Stock: ",`${highestName} (${highestStock})`); // other method
+// console.log("Lowest Stock: ",lowestName,"(" ,lowestStock,")"); // main method
