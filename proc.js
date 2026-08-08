@@ -488,3 +488,43 @@ const books = [
 // console.log("\nAverage: ", averageTotal);
 
 // console.log(`Passed student: ${passedStudents}`);
+
+
+    
+//RESTAURANT ORDER SYSTEM
+const menu = [
+    { name: "Burger", price: 120 },
+    { name: "Fries", price: 60 },
+    { name: "Coke", price: 40 },
+    { name: "Chicken", price: 150 }
+];
+
+const orders = [
+    "Burger",
+    "Fries",
+    "Burger",
+    "Coke"
+];
+
+let totalBill = 0;
+let orderItems = 0;
+let mostExpensive = menu[0];
+
+
+for (let i = 0; i < orders.length; i++){
+
+    let order = orders[i]; 
+   
+    for(let j = 0; j < menu.length; j++){
+        
+        let menuName = menu[j].name;
+
+        if(order === menuName){
+            totalBill += menu[j].price;
+            console.log(order,"-",menu[j].price);
+        }
+
+    }
+
+}
+console.log("\nTotal: ",totalBill);
