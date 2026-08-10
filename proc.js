@@ -490,41 +490,54 @@ const books = [
 // console.log(`Passed student: ${passedStudents}`);
 
 
+ 
+// RESTAURANT ORDER SYSTEM
+// const menu = [
+//     { name: "Burger", price: 120 },
+//     { name: "Fries", price: 60 },
+//     { name: "Coke", price: 40 },
+//     { name: "Chicken", price: 150 }
+// ];
+
+// const orders = [
+//     "Burger",
+//     "Fries",
+//     "Pizza",
+//     "Coke"
+// ];
+
+// let totalBill = 0;
+// let orderItems = 0;
+// let mostExpensive = menu[0];
+
+
+// for (let i = 0; i < orders.length; i++){
+
+//     let order = orders[i];
+//     let foundItems = false;
     
-//RESTAURANT ORDER SYSTEM
-const menu = [
-    { name: "Burger", price: 120 },
-    { name: "Fries", price: 60 },
-    { name: "Coke", price: 40 },
-    { name: "Chicken", price: 150 }
-];
-
-const orders = [
-    "Burger",
-    "Fries",
-    "Burger",
-    "Coke"
-];
-
-let totalBill = 0;
-let orderItems = 0;
-let mostExpensive = menu[0];
-
-
-for (let i = 0; i < orders.length; i++){
-
-    let order = orders[i]; 
-   
-    for(let j = 0; j < menu.length; j++){
+//     for(let j = 0; j < menu.length; j++){
         
-        let menuName = menu[j].name;
+//         let menuName = menu[j].name;
 
-        if(order === menuName){
-            totalBill += menu[j].price;
-            console.log(order,"-",menu[j].price);
-        }
+//         if(order === menuName){
+//             foundItems = true;
+//             totalBill += menu[j].price;
+//             console.log(order,"-",menu[j].price);
 
-    }
+//             if(menu[j].price > mostExpensive.price){
+//                 mostExpensive = menu[j];
+//             }
 
-}
-console.log("\nTotal: ",totalBill);
+//         }
+//     }
+
+//     orderItems++;
+
+//     if(!foundItems){
+//         console.log(order," is not found");
+//     }
+// }
+// console.log("\nTotal: ",totalBill);
+// console.log("Total items: ",orderItems);
+// console.log(`Most Expensive Dish: ${mostExpensive.name} - ${mostExpensive.price}`);
