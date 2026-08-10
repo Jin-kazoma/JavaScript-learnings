@@ -541,3 +541,72 @@ const books = [
 // console.log("\nTotal: ",totalBill);
 // console.log("Total items: ",orderItems);
 // console.log(`Most Expensive Dish: ${mostExpensive.name} - ${mostExpensive.price}`);
+
+
+
+    
+//HOTEL BOOKING SYSTEM - final
+// const rooms = [
+//     { roomNumber: 101, type: "Single", price: 1000, available: true },
+//     { roomNumber: 102, type: "Double", price: 1500, available: true },
+//     { roomNumber: 103, type: "Suite", price: 2500, available: false },
+//     { roomNumber: 104, type: "Single", price: 1000, available: true }
+// ];
+
+// const bookings = [
+//     { roomNumber: 101, guest: "Kenny", nights: 3 },
+//     { roomNumber: 103, guest: "Mark", nights: 2 },
+//     { roomNumber: 104, guest: "John", nights: 1 }
+// ];
+
+// let occupiedRooms = 0;
+// let vacantRooms = 0;
+// let mostExpensive = rooms[0];
+// let revenue = 0;
+
+// console.log("ROOM DETAILS");
+// for(let i = 0; i < rooms.length; i++){
+
+//     let room = rooms[i];
+//     let availableStatus;
+
+    
+//     if(room.available){
+//         availableStatus = "Available";
+//         vacantRooms++;
+//     } else{
+//         availableStatus = "Not Available";
+//         occupiedRooms++;
+//     }
+
+//     if(room.price > mostExpensive.price){
+//         mostExpensive = room;
+//     }
+
+//     console.log(`${room.roomNumber} - ${room.type} - ${room.price} - ${availableStatus}`);
+// }
+
+// console.log("\nGUEST DETAILS");
+// for(let i = 0; i < bookings.length; i++){
+
+//     let booking = bookings[i];
+
+//      for(let j = 0; j < rooms.length; j++){
+
+//         let room = rooms[j]
+
+//        if(booking.roomNumber === room.roomNumber){ 
+//         let bookingCost = room.price * booking.nights;
+//         console.log(`${booking.guest} - ${bookingCost}`);
+
+//         revenue += bookingCost;
+//         }
+       
+//     }
+// }
+
+// console.log(`\nThe most expensive is: ${mostExpensive.type} - ${mostExpensive.price}`);
+
+// console.log("\nVacant Rooms:", vacantRooms);
+// console.log("Occupied Rooms:", occupiedRooms);
+// console.log("Total Revenue:", revenue);
