@@ -74,3 +74,10 @@
 // } else {
 //     console.log("Invalid username or password");
 // }
+
+// 6
+// const food = document.querySelectorAll(".food");
+
+// for(let i = 0; i < food.length; i++){
+//     console.log(`Order: ${food[i].value}`);
+// };
