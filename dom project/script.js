@@ -48,3 +48,29 @@
 //     const menu3 = menu[2];
 //     menu3.textContent = "Pansit - 120";
 //  }
+
+
+
+// 4
+// const username = document.getElementById("username");
+// const age = document.querySelector("#age");
+
+// console.log(username.value);
+// console.log(age.value);
+
+// const profile =` Username: ${username.value} \n age: ${age.value}`;
+// console.log(profile);
+
+
+// 5 
+// const username = document.getElementById("username");
+// const password = document.getElementById("password");
+
+// console.log(username.value);
+// console.log(password.value);
+
+// if(username.value === "admin" && password.value === "12345"){
+//     console.log("Login Successfull");
+// } else {
+//     console.log("Invalid username or password");
+// }
