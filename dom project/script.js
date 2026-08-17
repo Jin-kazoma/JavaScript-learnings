@@ -210,3 +210,23 @@
 // grades.forEach(function(grade){
 //     console.log(grade);
 // });
+
+
+//FORM VALIDATION EXRCISE
+const form = document.querySelector("#userForm");
+
+const username = document.querySelector("#username");
+const password = document.querySelector("#password");
+const age = document.querySelector("#age");
+const country = document.querySelector("#country");
+const mesage = document.querySelector("#message");
+const register = document.querySelector("#register");
+
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+
+        console.log(`Username: ${username.value}`);
+        console.log(`Age: ${age.value}`);
+        console.log(`Country: ${country.value}`);
+        console.log(`Message: ${mesage.value}`);
+    });
