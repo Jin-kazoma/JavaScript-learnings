@@ -127,3 +127,86 @@
 //     console.log("Button Clicked!");
 //     console.log(event.target);
 // });
+
+
+
+//TO DO LIST version
+// const input = document.querySelector("#itemInput");
+// const button = document.querySelector("#addBtn");
+// const list = document.querySelector("#list");
+// const delbtn = document.querySelector("#delBtn");
+
+// button.addEventListener("click", function(){
+    
+//     if(input.value === ""){
+//         return;
+//     }
+
+//     const items = document.createElement("li");
+//     items.textContent = input.value;
+
+//     items.addEventListener("click", function(event){
+//         event.target.classList.toggle("Completed!");
+//     });
+
+//     list.appendChild(items);
+//     input.value = "";
+
+//     delbtn.addEventListener("click", function(){
+//         items.remove();
+//     });
+//         items.appendChild(delbtn);
+//         document.querySelector("#list").appendChild(items);
+
+// });
+
+
+//ARRAY METHODS
+// const grades = [75, 82, 90, 68, 95, 70];
+
+// // add +5 points
+// const plusPoints = grades.map(function(grade){
+//     return grade + 5;
+// });
+// console.log(plusPoints);
+
+// // get grade of 80
+// const getGrades = grades.filter(function(grade){
+//     return grade > 80;
+// });
+// console.log("\n",getGrades);
+
+// // get grades higher than 85
+// const getHGrades = grades.find(function(grade){
+//     return grade > 85;
+// });
+// console.log("\n",getHGrades);
+
+// // find the index of grade below 70
+// const index = grades.findIndex(function(grade){
+//     return grade < 70;
+// });
+// console.log("\n",index);
+
+// //check at least one grade is 95
+// const checkGrade = grades.some(function(grade){
+//     return grade < 95;
+// });
+// console.log("\n",checkGrade);
+
+// //check if grades are 60 or higher
+// const checkGrades = grades.every(function(grade){
+//     return grade > 60;
+// });
+// console.log("\n",checkGrades);
+
+// //calculate the total grade
+// const total = grades.reduce(function(sum,grade){
+//     return sum + grade;
+// },0);
+// console.log("\n",total);
+
+// //print each grade
+// grades.forEach(function(grade){
+//     console.log(grade);
+// });
